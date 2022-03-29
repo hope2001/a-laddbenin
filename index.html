@@ -381,7 +381,7 @@
 
         <!-- ======= Counts Section ======= -->
         <section id="counts" class="counts">
-            <div class="container-fluid alert-success1 ">
+            <div class="container-fluid alert-success1 py-5 ">
                 <h2 class="text-success1 text-center " style="font-weight: bold; font-size: 40px;">Planète ADDB</h2>
                 <div class="row counters d-flex justify-content-evenly p-5 flex-wrap">
 
@@ -542,25 +542,25 @@
             </div>
             <div class=" p-1 overflow-auto position-relativ h-100">
                 <div class="d-flex justify-content-start  px-1">
-                    <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 rounded" style=" left:0;">Please
+                    <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" left:0; border-radius: 12px;">Please
                         fill out the
                         form to
                         start chat!</p>
                 </div>
 
                 <div class="d-flex justify-content-end  px-1">
-                    <p class="alert-dark shadow-sm w-75 my-2 p-2 rounded" style=""> lorem ipsum dolor</p>
+                    <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> lorem ipsum dolor</p>
                 </div>
                 <div class="d-flex justify-content-end  px-1">
-                    <p class="alert-dark shadow-sm w-75 my-2 p-2 rounded" style="">Message blabla bla
+                    <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;">Message blabla bla
                         chat!</p>
                 </div>
                 <div class="d-flex justify-content-end  px-1">
-                    <p class="alert-dark shadow-sm w-75 my-2 p-2 rounded" style=""> blablabla message
+                    <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> blablabla message
                         chat!</p>
                 </div>
                 <div class="d-flex justify-content-start  px-1">
-                    <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 rounded" style=" left:0;">Please
+                    <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" border-radius: 12px; left:0;">Please
                         fill out the
                         form to
                         start chat!</p>
@@ -599,8 +599,8 @@
                             d'utilisations</a>
                         <!-- Button trigger modal newsletter -->
                         <a href="" class="text-light btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                            style="font-weight: 500;">Newsleters</a>
-                        <a href="" class="text-light btn" style="font-weight: 500;">Contacts</a>
+                            style="font-weight: 500;">Newsletters</a>
+                        <a href="" class="text-light btn" style="font-weight: 500;" data-bs-toggle="modal" data-bs-target="#exampleModal">Contacts</a>
                         <a href="faqs.html" class="text-light btn" style="font-weight: 500;">FAQs</a>
                     </h6>
                 </div>
@@ -619,6 +619,60 @@
 
             </div>
         </div>
+        
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+            <img src="assets/img/addb/Groupe 3 1.png" style="width: 70px; height: ;" alt="" srcset=""> </h5>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+          
+              <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact  p-0">
+        <div class="container p-0">
+  
+          <div class="section-title p-0">
+            <h1 class="text-success1">Contact</h1>
+            <p>Veuillez remplir le formulaire pour nous contacter</p>
+          </div>
+  
+          <div class="row">
+              <div class="col mt-5 mt-lg-0 d-flex align-items-stretch bg-info">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form border-top border-success1 border-4">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                    <label for="name">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Objet</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="5" required></textarea>
+                </div>
+                <div class="text-center"><a type="submit" class=" btn btn-success1 text-light">Send Message</a></div>
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+      </div>
+    </div>
+  </div>
+</div>
         <!-- Modal newsletter -->
         <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
