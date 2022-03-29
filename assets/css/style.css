@@ -831,7 +831,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #16df7e;
+  background: green;
   background-size: cover;
   padding: 60px 0;
 }
