@@ -722,10 +722,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #16df7e;
+  border: 1px solid green;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #16df7e;
+  background-color: green;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -821,10 +821,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #16df7e;
+  border: 1px solid green;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #16df7e;
+  background-color: green;
 }
 
 /*--------------------------------------------------------------
@@ -1260,10 +1260,10 @@ section {
   position: absolute;
   right: 70px;
   bottom: 20px;
-  height: 500px;
-  width: 600px;
+  height: 550px;
+  width: 750px;
   background-color: #F8F5F5;
-  border-radius: 5px;
+  border-radius: 25px!important;
   opacity: 0;
   transition: all 0.4s
 }
@@ -1278,7 +1278,7 @@ section {
 .header {
   padding: 15px;
   background-color: #607D8D;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
   margin-bottom: 10px;
   color: #fff
 }
