@@ -1359,6 +1359,9 @@ border: rgb(5, 46, 0)*/
 /* media query*/
 
 @media screen and (width < 1024px) {
+  .vb{
+    display: none;
+  }
 
   .wrapper {
     position: fixed;
