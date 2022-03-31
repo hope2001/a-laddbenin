@@ -1266,14 +1266,15 @@ section {
   border-radius: 25px!important;
   opacity: 0;
   transition: all 0.4s;
-  z-index: 100000;
+  z-index: -100;
 }
 
 
 
 
 #check:checked~.wrapper {
-  opacity: 1
+  opacity: 1;
+  z-index: 1000000 ;
 }
 
 .header {
@@ -1358,17 +1359,17 @@ border: rgb(5, 46, 0)*/
 
 /* media query*/
 
-@media screen and (width < 1024px) {
+@media screen and (width < 768px) {
   .vb{
     display: none;
   }
 
   .wrapper {
     position: fixed;
-    right: 5px;
-    bottom: 15px;
-    height: 75%;
-    width: 95%;
+    right: 0px;
+    bottom: 0px;
+    height: 80%;
+    width: 100%;
     background-color: #F8F5F5;
     border-radius: 5px;
     opacity: 0;
@@ -1391,7 +1392,7 @@ border: rgb(5, 46, 0)*/
   }
   .btdown{
     width: 100%!important;
-    font-size: 10px;
+    font-size: 20px;
   }
   .vb{
     display: none!important;
