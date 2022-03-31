@@ -1261,7 +1261,7 @@ section {
   right: 70px;
   bottom: 20px;
   height: 75%;
-  width: 50%;
+  width: 80%;
   background-color: #F8F5F5;
   border-radius: 25px!important;
   opacity: 0;
@@ -1358,10 +1358,14 @@ border: rgb(5, 46, 0)*/
 }
 
 /* media query*/
+/*
+@media only screen and (max-device-width: 667px), screen and (max-width: 450px)
+*/
 
-@media screen and (width < 768px) {
+/*@media screen and (width <= 768px) */
+@media only screen and (max-device-width: 667px), screen and (max-width: 450px){
   .vb{
-    display: none;
+    display: none!important;
   }
 
   .wrapper {
@@ -1381,11 +1385,12 @@ border: rgb(5, 46, 0)*/
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 10px;
     color: #fff;
-    font-size: 18px!important;
+    font-size: 15px!important;
+    overflow: scroll;
   }
   .header h5{
     color: #fff;
-    font-size: 18px!important;
+    font-size: 15px!important;
   }
   .qr{
     width: 100%!important;
