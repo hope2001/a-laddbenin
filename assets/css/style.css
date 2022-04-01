@@ -1253,6 +1253,7 @@ section {
   background-color: #607D8D;
   color: #fff;
   font-size: 22px;
+  z-index: 1000000000000000;
   border: none
 }
 
