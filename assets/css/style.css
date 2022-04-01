@@ -1217,7 +1217,8 @@ section {
   position: fixed;
   right: 10px;
   bottom: 20px;
-  cursor: pointer
+  cursor: pointer;z-index: 100000000000000000;
+
 }
 
 .chat-btn .close {
@@ -1253,7 +1254,6 @@ section {
   background-color: #607D8D;
   color: #fff;
   font-size: 22px;
-  z-index: 1000000000000000;
   border: none
 }
 
@@ -1357,6 +1357,9 @@ border: rgb(5, 46, 0)*/
    border-radius: 10px!important;
     font-size: 25px
 }
+/*.imda2{
+  height: 100px;
+}*/
 
 /* media query*/
 /*
@@ -1431,7 +1434,7 @@ border: rgb(5, 46, 0)*/
     font-size: 25px!important;
     width: 100%;
   }
-  .deb1, .deb2{
+  .deb1{
     display: none!important;
   }
   .bck2{
