@@ -29,7 +29,133 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <style></style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <style>
+      /*  h2{
+  text-align:center;
+  padding: 20px;
+}*/
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+    </style>
 
     <!-- =======================================================
 
@@ -169,7 +295,7 @@
 
 
                             </p>
-                            <strong class="mx-auto">ADDB, Le BENIN au bout des doigts !</strong>
+                            <strong class="mx-auto">ADDB, Le Bénin au bout des doigts !</strong>
 
                         </div>
                     </div>
@@ -180,7 +306,7 @@
                             style="bottom:0; left:0; height: 30%; background-color:#F5F5F5">
                             <h1 style="font-size: 20px;font-weight: bold;" class="text-success1">
                                 Le MUST HAVE pour une expérience
-                                touristique réussie au BENIN.
+                                touristique réussie au Bénin.
                             </h1>
 
                             <p style="font-size: 17px;">
@@ -345,7 +471,19 @@
                 <h2 class="text-center text-success1 my-3" style="font-weight: 700; font-size: 40px;">Ils ont rejoint
                     ADDB</h2>
                 <div class="container mt-2">
-                    <div class="row d-flex justify-content-evenly">
+                    <div class="row">
+                        <section class="customer-logos slider">
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 1.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 2.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 3.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 4.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 5.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 6.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 7.png"></div>
+                            <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 8.png"></div>
+                           </section>
+                    </div>
+                    <!--<div class="row d-flex justify-content-evenly">
                         <div class="col-lg-3 col-sm-6 col-md-3 d-flex p-3">
                             <img src="assets/img/addb/Ellipse 1.png" class="w-75 m-auto" alt="" sizes="" srcset="">
                         </div>
@@ -371,7 +509,7 @@
                             <img src="assets/img/addb/Ellipse 8.png" class="w-75 m-auto" alt="" sizes="" srcset="">
                         </div>
 
-                    </div>
+                    </div>-->
                     <p class=" tt3 text-center my-2 text-dark" style="font-weight: 600; font-size: 34px;">Rejoindre ADDB avec
                         mon entreprise maintenant ! Avec <strong>Kwabô
                         </strong> c’est gratuit !
@@ -380,6 +518,19 @@
 
             </div>
         </section><!-- End About Section -->
+
+       <!-- <div class="container">
+             <section class="customer-logos slider">
+                <div class="slide"><img src="assets/img/addb/Ellipse 1.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 2.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 3.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 4.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 5.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 6.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 7.png"></div>
+                <div class="slide"><img src="assets/img/addb/Ellipse 8.png"></div>
+               </section>
+             </div>-->
 
         <!-- ======= Counts Section ======= -->
         <section id="counts" class="counts">
@@ -537,9 +688,9 @@
                         <div class=" tt7 col-lg-7  col-sm-12 d-flex text-center justify-content-center align-self-center text-light" style="font-weight: bold; font-size: 38px;">
                             Téléchargez gratuitement ADDB
                         </div>
-                            <img src="assets/img/addb/play-store.png" class=" col-lg-2 col-sm-12 align-self-stretch  imda1" alt="" sizes="" srcset="" href="">
+                            <img src="assets/img/addb/play-store.png" class="p-1 col-lg-2 col-sm-12 align-self-stretch  imda1" alt="" sizes="" srcset="" href="">
                 
-                            <img src="assets/img/addb/app store.png" class=" col-lg-2 col-sm-12 align-self-stretch imda2" alt="" sizes=""
+                            <img src="assets/img/addb/app store.png" class="p-2 col-lg-2 col-sm-12 align-self-stretch imda2" alt="" sizes=""
                                 srcset="">
                     </div>
     
@@ -765,6 +916,30 @@
     <script src="assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script >
+        $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+    </script>
 
 </body>
 
