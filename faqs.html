@@ -29,7 +29,99 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <style></style>
+    <style>
+        /*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq .faq-list {
+  padding: 0;
+}
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+.faq .faq-list li {
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: green;
+  display: none;
+}
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+.faq .faq-list .icon-show {
+  display: none;
+}
+ul li:contains-selector(a.collapse) { background: red; }
+
+.faq .faq-list ul li :has( a.collapsed) 
+{
+  color: #343a40;
+  background-color: aqua!important;
+}
+
+.faq .faq-list ul li:has(a.collapse)
+{
+    border: 2px solid green;
+    background-color: rgb(243, 141, 17);
+}
+
+
+
+.faq .faq-list a.collapsed:hover {
+  color: green;
+}
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 0px gray;
+
+}
+/*.faq .faq-list ul li  {
+  background-color: orange;
+
+border: 2px solid green;
+
+}*/
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+    </style>
 
     <!-- =======================================================
 
@@ -62,7 +154,7 @@
                 <ul class="py-3 ">
                     <li class="mx-3">
                         <a class="scrollto t-20 p-2  text-success1  btn btn-outline-success1 " style="font-weight: 400;"
-                            href="login.html">Se
+                            href="login1.html">Se
                             connecter</a>
                     </li>
                     <li class="mx-3">
@@ -103,86 +195,79 @@
 
     </section><!-- End Hero -->
 
-
-    <main id="main">
-
-        <div class="container text-success1 my-3 alert-success1 rounded p-4">
-            <div class="row my-3">
-                <div class="col-lg-10 col-sm-6   bg-light rounded p-0 border border-success1 border-2 d-flex mx-auto shadow"
-                    style="">
-                    <div class="col-lg-10 col-sm-12 sm-order-2 d-flex flex-column p-4">
-                        <h3 class="text-success1 text-center">Lorem ipsum dolor sit amet sed do tempor quis labore
-                            veniam?</h3>
-                        <p class="text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+        <!-- ======= F.A.Q Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container alert-success1 d-flex p-5">
+      
+                <div class="col-lg-10 col-md-11 col-sm-12 m-auto">
+    
+      
+              <div class="faq-list">
+                <ul>
+                  <li data-aos="fade-up"  >
+                    <i class="bx bx-help-circle icon-help"></i> 
+                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                        Non consectetur a erat nam at lectus urna duis? 
+                        <i class="bx bx-chevron-down icon-show"></i>
+                        <i class="bx bx-chevron-up icon-close"></i>
+                    </a>
+                    <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                      <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      </p>
                     </div>
-                    <div class="col-lg-2 col-sm-12 sm-order-1 d-flex">
-                        <i class="bi bi-person-circle text-success1  m-auto" style="font-size: 80px;"></i>
+                  </li>
+      
+                  <li data-aos="fade-up" data-aos-delay="100" >
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      </p>
                     </div>
+                  </li>
+      
+                  <li data-aos="fade-up" data-aos-delay="200" >
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                      </p>
+                    </div>
+                  </li>
+      
+                  <li data-aos="fade-up" data-aos-delay="300" >
+                    <i class="bx bx-help-circle icon-help"></i> 
+                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">
+                        Tempus quam pellentesque nec nam aliquam sem et tortor consequat? 
+                        <i class="bx bx-chevron-down icon-show"></i>
+                        <i class="bx bx-chevron-up icon-close"></i>
+                    </a>
+                    <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                      </p>
+                    </div>
+                  </li>
+      
+                  <li data-aos="fade-up" data-aos-delay="400">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                      </p>
+                    </div>
+                  </li>
+      
+                </ul>
+              </div>
                 </div>
+      
             </div>
-            <div class="row">
-                <div class="accordion accordion-flush w-100 m-auto d-flex flex-column " id="accordionFlushExample">
-                    <div class="accordion-item alert-success1">
-                        <h2 class="accordion-header " id="flush-headingOne">
-                            <button class="accordion-button collapsed border shadow rounded my-3 p-4" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Lorem ipsum dolor sit amet sed do tempor quis labore veniam?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                accordion body.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item alert-success1">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed border shadow rounded my-3 p-4" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Lorem ipsum dolor sit amet sed do tempor quis labore veniam?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the second item's
-                                accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item alert-success1">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed border shadow rounded my-3 p-4" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Lorem ipsum dolor sit amet sed do tempor quis labore veniam?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                accordion body. Nothing more exciting happening here in terms of content, but just
-                                filling up the space to make it look, at least at first glance, a bit more
-                                representative of how this would look in a real-world application.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </section><!-- End F.A.Q Section -->
 
 
-        </div>
-
-
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class=" bg-success1 ">
+          <section id="cta" class=" bg-success1 ">
             <div class="container-fluid bg-success1 p-0">
                 <div class="row p-5 ">
                     <div class=" tt7 col-lg-7  col-sm-12 d-flex text-center justify-content-center align-self-center text-light"
@@ -328,7 +413,7 @@
                             </div>
                             <div class="row">
                                 <h3 class="text-center">Subscribe to our newsletter</h3>
-                                <p class="text-center my-2">
+                                <p class="text-center my-2" style="line-height: 2.5em;">
                                     Recevez de nouveaux articles et ressources directement dans votre boîte de
                                     réception. Remplissez votre email ci-dessous pour vous inscrire à notre newsletter
                                     dès aujourd'hui.
@@ -339,7 +424,7 @@
                                         style="line-height: 2em;" method="post">
                                         <input type="email" class="form-control border-light" name="email"
                                             placeholder="Enter your Email">
-                                        <input type="submit" class="btn btn-success1 rounded-pill" value="Subscribe">
+                                        <input type="submit" class="btn btn-success1 text-light rounded-pill" value="Subscribe">
                                     </form>
                                 </div>
                             </div>
@@ -350,67 +435,6 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-    <!--<a href="#" class="help-to-top d-flex align-items-center justify-content-center"></a>-->
-
-
-    <input type="checkbox" id="check">
-    <label class="chat-btn shadow elp-to-top d-flex align-items-center justify-content-center" for="check">
-        <i class="bi bi-patch-question"></i>
-        <i class="fa fa-close close"></i>
-    </label>
-    <div class="wrapper d-flex flex-column justify-content-between shadow ">
-        <div class="header">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="text-light fw-600" style="font-size: 35px;">Assistances 24h/7j</h5>
-                <label
-                    class="btn btn-sm rounded-circle border-light border align-self-center shadow d-flex align-items-center justify-content-center"
-                    for="check">
-                    <i class="bi bi-asterisk text-light"></i>
-                </label>
-            </div>
-            <span class="text-light fw-600 btn-sm">En ligne</span>
-        </div>
-        <div class=" p-1 overflow-auto position-relativ h-100">
-            <div class="d-flex justify-content-start  px-1">
-                <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" left:0; border-radius: 12px;">
-                    Please
-                    fill out the
-                    form to
-                    start chat!</p>
-            </div>
-
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> lorem ipsum dolor</p>
-            </div>
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;">Message blabla bla
-                    chat!</p>
-            </div>
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> blablabla message
-                    chat!</p>
-            </div>
-            <div class="d-flex justify-content-start  px-1">
-                <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" border-radius: 12px; left:0;">
-                    Please
-                    fill out the
-                    form to
-                    start chat!</p>
-            </div>
-
-        </div>
-        <form class="chat-form d-flex " style="bottom: 0;left: 0;">
-            <label for="filo" class="m-auto btn"> <i class="bi bi-paperclip"></i> </label>
-            <input id="filo" type="file" class="d-none" placeholder="">
-            <input type="text" class="form-control m-auto" placeholder="Ecrivez votre message ici">
-            <label for="submit" class="m-auto btn"> <i class="bi text-dark bi-send-plus"></i> </label>
-            <input id="submit" type="submit" class="d-none" placeholder="">
-
-
-        </form>
-    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -424,8 +448,33 @@
     <script src="assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script >
+        $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+    </script>
 
-
+    <script type="text/javascript">
+        window.$crisp=[];window.CRISP_WEBSITE_ID="f6c7c6cd-12be-4d09-8956-4c940c455b2b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 </body>
 

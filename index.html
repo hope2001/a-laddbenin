@@ -30,131 +30,127 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+    <!------ Include the above in your HEAD tag ---------->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <style>
-      /*  h2{
+        /*  h2{
   text-align:center;
   padding: 20px;
 }*/
-/* Slider */
+        /* Slider */
 
-.slick-slide {
-    margin: 0px 20px;
-}
+        .slick-slide {
+            margin: 0px 20px;
+        }
 
-.slick-slide img {
-    width: 100%;
-}
+        .slick-slide img {
+            width: 100%;
+        }
 
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
             user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
+        .slick-list:focus {
+            outline: none;
+        }
+
+        .slick-list.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-}
+        }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
 
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
+        .slick-track:before,
+        .slick-track:after {
+            display: table;
+            content: '';
+        }
+
+        .slick-track:after {
+            clear: both;
+        }
+
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        [dir='rtl'] .slick-slide {
+            float: right;
+        }
+
+        .slick-slide img {
+            display: block;
+        }
+
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
     </style>
 
     <!-- =======================================================
@@ -188,7 +184,7 @@
                 <ul class="py-3 ">
                     <li class="mx-3">
                         <a class="scrollto t-20 p-2  text-success1  btn btn-outline-success1 " style="font-weight: 400;"
-                            href="login.html">Se
+                            href="login1.html">Se
                             connecter</a>
                     </li>
                     <li class="mx-3">
@@ -213,7 +209,8 @@
                     <h3 class="text-dark my-2"><strong style="font-size: 34px;">Une expérience touristique unique
                             !</strong></h3>
 
-                    <h5 class="mt-5 mb-3 text-dark " style="font-size: 22px; font-weight: 500 ;">ADDB est une
+                    <h5 class="mt-5 mb-3 text-dark " style="font-size: 22px; font-weight: 500 ;"> <strong>ADDB</strong>
+                        est une
                         application mobile pensée pour les
                         amoureux
                         de voyage et de découverte, et dont le seul but est de vous
@@ -249,26 +246,28 @@
             <div class="container">
 
                 <div class="row ">
-                    <div class="col-lg-6 bg-success1 d-flex flex-column text-light p-4"
+                    <div class="col-lg-6 bg-success1 d-flex flex-column text-light p-4 sm-rounded"
                         style="border-radius: 15px 0px  0px 15px; line-height: 2em;">
                         <div class=" m-auto">
-                            <h2 class="font-size:35px">Un GPS qui vous sauve la vie !</h2>
-                            <p>
-                                Retrouvez en un clic les adresses importantes et
+                            <h2 class="mb-5 " style="font-size:35px; font-weight: bolder;">Un GPS qui vous sauve la vie
+                                !</h2>
+                            <p class="mt-5" style="font-size:22px;">
+                                Retrouvez en <strong>un clic</strong> les adresses <strong>importantes</strong> et
                                 numéros utiles des établissements et institutions tels que : hôtels,
                                 pharmacies de gardes, cliniques, commissariat
                                 de police, banques, agences de tourisme etc.
 
                             </p>
 
-                            <p>
+                            <p class="my-3" style="font-size:22px;">
                                 Choisissez le lieu souhaité et <strong>laissez vous guider</strong> par
                                 notre GPS intégré.
 
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 alert-success1 d-flex m-auto p-3" style="border-radius: 0px 15px  15px 0px;">
+                    <div class="col-lg-6 alert-success1 d-flex m-auto p-3 sm-rounded"
+                        style="border-radius: 0px 15px  15px 0px;">
                         <img src="assets/img/addb/capt2.png" alt="" class="img-fluid m-auto w-75">
                     </div>
                 </div>
@@ -285,14 +284,14 @@
                     <div class=" m-2 col-lg-4 d-flex flex-column p-0 bg-light rounded position-relative ">
                         <img class="img-fluid  mx-auto" src="assets/img/addb/addb6 1.png" style="width: 100%;" alt=""
                             srcset="">
-                        <div class="d-flex   px-3 py-4 flex-column shadow text-center position-absolute overflow-auto"
+                        <div class="d-flex   px-3 py-4 flex-column shadow text-cente no-wrap position-absolute overflow-auto"
                             style="bottom: 0; left: 0; height: 30%;background-color:#F5F5F5">
-                            <h1 style="font-size: 20px;font-weight: bold;" class="text-success1">
+                            <h1 style="font-size: 20px;font-weight: bold;" class="text-success1 text-center">
                                 Un agenda d’évènements soigneusement
                                 sélectionnés
                             </h1>
 
-                            <p style="font-size: 17px;">
+                            <p style="font-size: 17px;" class="my-3">
                                 Accédez à un catalogue d’évènements de tout genre
                                 disponible sur toute l’étendue du territoire BENINOIS.
 
@@ -305,15 +304,15 @@
                     <div class=" m-2 col-lg-4 d-flex flex-column bg-light p-0 rounded position-relative">
                         <img class="img-fluid w-100 mx-auto" src="assets/img/addb/traj.png" style="width: 10px;" alt=""
                             srcset="">
-                        <div class="d-flex px-3 py-4 flex-column shadow text-center position-absolute overflow-auto"
+                        <div class=" d-flex px-3 py-5 flex-column shadow  position-absolute overflow-auto justify-content-between"
                             style="bottom:0; left:0; height: 30%; background-color:#F5F5F5">
-                            <h1 style="font-size: 20px;font-weight: bold;" class="text-success1">
+                            <h1 style="font-size: 20px;font-weight: bold;" class="text-success1 text-center">
                                 Le MUST HAVE pour une expérience
                                 touristique réussie au Bénin.
                             </h1>
 
-                            <p style="font-size: 17px;">
-                                Une application ergonomique, intuitive et dynamique, 
+                            <p style="font-size: 17px;" class="">
+                                Une application ergonomique, intuitive et dynamique,
                                 disponible sur toutes les plateformes.
                             </p>
                         </div>
@@ -321,14 +320,15 @@
                     <div class="col-lg-1"></div>
                 </div>
 
-                <div class="row d-flex my-4">
+                <div class="row d-flex my-5 pt-5">
                     <div class="col-lg-6 col-sm-12 font-weight-bold d-flex flex-column m-auto align-self-baseline"
                         style="">
-                        <a href="" class="btn btn-success1  text-center  p-1 text-light no-wrap m-auto btdown"
+                        <a href=""
+                            class="btn btn-success1  text-center  py-2 px-3 text-light no-wrap m-auto btdown my-4"
                             style="">Télécharger ADDB
                         </a>
-                            <img src="assets/img/addb/QR.png" class=" btn qr m-auto" style="width: 40%;" alt="" srcset="">
-                        
+                        <img src="assets/img/addb/QR.png" class=" btn qr m-auto" style="width: 40%;" alt="" srcset="">
+
                     </div>
                 </div>
 
@@ -339,10 +339,11 @@
         <section id="about" class="about">
             <div class="container  ">
 
-                <h3 class=" text-center text-success1 my-4 tt1 " style="font-weight: 650; font-size: 38px;">Votre offre
+                <h3 class=" text-center text-success1 my-5 tt1  py-5" style="font-weight: 650; font-size: 38px;">Votre
+                    offre
                     rencontre ses clients potentiels !
                 </h3>
-                <div class="row mb-5">
+                <div class="row my-5">
                     <div class="col-lg-6 alert-success1" style="border-radius: 15px 0px 0px 15px;">
                         <img src="assets/img/addb/PC 2 1.png" class="img-fluid" alt="">
                     </div>
@@ -363,11 +364,11 @@
                                  consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
                              </li>
                          </ul>-->
-                            <p class="m-2 p-2" style="font-size: 26px;">
+                            <p class="m-2 p-2" style="font-size: 26px; line-height: 2em;">
                                 Avec plus de <strong>3500 utilisateurs actifs</strong> dans tout
-                                le Bénin et au-delà, boostez votre visibilité. Vos
+                                le Bénin et au-delà, <strong>boostez </strong> votre <strong>visibilité</strong> . Vos
                                 offres atterrissent directement auprès de vos
-                                clients potentiels.
+                                <strong>clients potentiels</strong>.
                             </p>
                         </div>
                     </div>
@@ -381,7 +382,7 @@
                             <h3 class="text-light my-3" style="font-size: 28px;">Des outils de management pros et
                                 adaptés !</h3>
 
-                            <p class="m-2 p-2" style="font-size: 23px;">
+                            <p class="m-2 p-2" style="font-size: 23px; line-height: 2em;">
                                 Retrouvez les <strong>statistiques</strong> des recherches clients,
                                 accédez à tous les outils nécessaires afin de
                                 configurer et <strong>augmenter</strong> votre <strong>visibilité</strong>.
@@ -403,7 +404,7 @@
             <div class="container-fluid alert-success1">
 
                 <div class="container p-5">
-                    <div class="row d-flex py-5 position-relativ bg-light rounded justfy-content-center">
+                    <div class="row d-flex pt-5 position-relativ bg-light rounded justfy-content-center">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4 col-sm-12 d-flex p-0">
                             <img src="assets/img/addb/obj1.png" class="w-100 mx-auto" alt="" sizes="" srcset="">
@@ -432,8 +433,7 @@
                                         style="font-size: 80px;"></i>
                                 </div>
                                 <div class="col-lg-10 col-md-10 col-sm-12 d-flex flex-column">
-                                    <p class=" tt3 m-auto text-dark p-2"
-                                        style="font-weight:600 ; font-size: 25px;">
+                                    <p class=" tt3 m-auto text-dark p-2" style="font-weight:600 ; font-size: 25px; line-height: 2em;">
                                         Un assistant commercial vous accompagne personnellement tout
                                         au long de la prise en mains des outils et reste entièrement
                                         disponible pour d’éventuels questions 24h/7j.
@@ -441,9 +441,10 @@
 
                                 </div>
                             </div>
-                            <div class=" tt3r ow d-flex justify-content-center align-self-center ">
-                                <label for="check" class="tt6" style="font-size: 20px; border-radius: 10px;"
-                                    class="m-auto btn btn-outline-success1 ">Poser une question</label>
+                            <div class="  tt3 row d-flex justify-content-center align-self-center ">
+                                <label for="check" style="font-size: 20px; border-radius: 10px;"
+                                    class=" tt6 m-auto btn btn-outline-success1 " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Poser une question</label>
                             </div>
                         </div>
                     </div>
@@ -452,7 +453,8 @@
                             <h3 class="text-center my-3 tt4" style="font-weight: 700; color: black; font-size: 35px;">
                                 Profitez de la promotion <strong>Kwabô</strong>
                             </h3>
-                            <p class=" tt5 text-center my-3 px-3" style="font-weight: 400; color: black; font-size: 28px;">
+                            <p class=" tt5 text-center my-3 px-3"
+                                style="font-weight: 400; color: black; font-size: 28px;">
                                 Inscrivez votre entreprise maintenant et profitez des tous nos
                                 services
                                 gratuitement pendant un mois.
@@ -484,7 +486,7 @@
                             <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 6.png"></div>
                             <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 7.png"></div>
                             <div class="slide col-lg-3 col-sm-6"><img src="assets/img/addb/Ellipse 8.png"></div>
-                           </section>
+                        </section>
                     </div>
                     <!--<div class="row d-flex justify-content-evenly">
                         <div class="col-lg-3 col-sm-6 col-md-3 d-flex p-3">
@@ -513,7 +515,8 @@
                         </div>
 
                     </div>-->
-                    <p class=" tt3 text-center my-2 text-dark" style="font-weight: 600; font-size: 34px;">Rejoindre ADDB avec
+                    <p class=" tt3 text-center my-2 text-dark" style="font-weight: 600; font-size: 34px;">Rejoindre ADDB
+                        avec
                         mon entreprise maintenant ! Avec <strong>Kwabô
                         </strong> c’est gratuit !
                     </p>
@@ -522,7 +525,7 @@
             </div>
         </section><!-- End About Section -->
 
-       <!-- <div class="container">
+        <!-- <div class="container">
              <section class="customer-logos slider">
                 <div class="slide"><img src="assets/img/addb/Ellipse 1.png"></div>
                 <div class="slide"><img src="assets/img/addb/Ellipse 2.png"></div>
@@ -541,25 +544,25 @@
                 <h2 class="text-success1 text-center " style="font-weight: bold; font-size: 40px;">Planète ADDB</h2>
                 <div class="row counters d-flex justify-content-evenly p-5 flex-wrap">
 
-                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-3 rounded ">
+                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-2 rounded ">
                         <i class="bi bi-download text-light" style="font-size: 80px; font-weight: bold;"></i>
                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                             class="purecounter text-light"></span>
-                        <p class="text-light tt3 text-center" style="font-size: 30px;">Téléchargements</p>
+                        <p class="text-light tt3 text-center" style="font-size: 26px;">Téléchargements</p>
                     </div>
 
-                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-3 rounded">
+                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-2 rounded">
                         <i class="bi bi-people text-light" style="font-size: 80px;"></i>
                         <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
                             class="purecounter text-light"></span>
-                        <p class="text-light tt3 text-center" style="font-size: 30px;">Utilisateurs actifs</p>
+                        <p class="text-light tt3 text-center" style="font-size: 26px;">Utilisateurs actifs</p>
                     </div>
 
-                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-3 rounded">
+                    <div class="col-lg-3 m-2 col-sm-6 text-center bg-success1 p-2 rounded">
                         <i class="bi bi-bank text-light" style="font-size: 80px;"></i>
                         <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
                             class="purecounter text-light"></span>
-                        <p class="text-light tt3 text-center" style="font-size: 30px;">Institutions actives au Bénin</p>
+                        <p class="text-light tt3 text-center" style="font-size: 26px;">Institutions actives au Bénin</p>
                     </div>
 
                 </div>
@@ -684,28 +687,30 @@
 
             </div>
         </section> End Cta Section -->
-             
 
-                          <!-- ======= Cta Section ======= -->
-                          <section id="cta" class=" bg-success1 ">
-                            <div class="container-fluid bg-success1 p-0">
-                                <div class="row p-5 ">
-                                    <div class=" tt7 col-lg-7  col-sm-12 d-flex text-center justify-content-center align-self-center text-light" style="font-weight: bold; font-size: 38px;">
-                                        Téléchargez gratuitement ADDB
-                                    </div>
-                                    <a href="" class="col-lg-2 m-2 col-sm-12" >
-                                        <img src="assets/img/addb/Google-Play-Store-Button.png" class=" w-100  align-self-stretch  imd" alt="" sizes="" srcset="" href="">
-                                        
-                                    </a>
-                                        <a href="" class="col-lg-2 m-2 col-sm-12">
-                                            <img src="assets/img/addb/App-Store-Button-transparent.png" class="w-100 align-self-stretch imd" alt="" sizes=""
-                                            srcset="">
-                                        </a>
-                                        
-                                </div>
-                
-                            </div>
-                        </section><!-- End Cta Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class=" bg-success1 ">
+            <div class="container-fluid bg-success1 p-0">
+                <div class="row p-5 ">
+                    <div class=" tt7 col-lg-7  col-sm-12 d-flex text-center justify-content-center align-self-center text-light"
+                        style="font-weight: bold; font-size: 38px;">
+                        Téléchargez gratuitement ADDB
+                    </div>
+                    <a href="" class="col-lg-2 m-2 col-sm-12">
+                        <img src="assets/img/addb/Google-Play-Store-Button.png" class=" w-100  align-self-stretch  imd"
+                            alt="" sizes="" srcset="" href="">
+
+                    </a>
+                    <a href="" class="col-lg-2 m-2 col-sm-12">
+                        <img src="assets/img/addb/App-Store-Button-transparent.png" class="w-100 align-self-stretch imd"
+                            alt="" sizes="" srcset="">
+                    </a>
+
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
 
 
 
@@ -831,8 +836,8 @@
                                 <div class="col-4"></div>
                             </div>
                             <div class="row">
-                                <h3 class="text-center">Subscribe to our newsletter</h3>
-                                <p class="text-center my-2">
+                                <h3 class="text-center text-dark">Subscribe to our newsletter</h3>
+                                <p class="text-center  my-2" style="line-height: 2.5em;">
                                     Recevez de nouveaux articles et ressources directement dans votre boîte de
                                     réception. Remplissez votre email ci-dessous pour vous inscrire à notre newsletter
                                     dès aujourd'hui.
@@ -843,7 +848,8 @@
                                         style="line-height: 2em;" method="post">
                                         <input type="email" class="form-control border-light" name="email"
                                             placeholder="Enter your Email">
-                                        <input type="submit" class="btn btn-success1 rounded-pill" value="Subscribe">
+                                        <input type="submit" class="btn btn-success1 text-light rounded-pill"
+                                            value="Subscribe">
                                     </form>
                                 </div>
                             </div>
@@ -854,65 +860,6 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-    <!--<a href="#" class="help-to-top d-flex align-items-center justify-content-center"></a>-->
-
-
-    <input type="checkbox" id="check">
-    <label class="chat-btn shadow elp-to-top d-flex align-items-center justify-content-center" for="check">
-        <i class="bi bi-patch-question"></i>
-        <i class="fa fa-close close"></i>
-    </label>
-    <div class="wrapper d-flex flex-column justify-content-between shadow ">
-        <div class="header">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="text-light fw-600" style="font-size: 35px;">Assistances 24h/7j</h5>
-            <label class="btn btn-sm rounded-circle border-light border align-self-center shadow d-flex align-items-center justify-content-center" for="check">
-                <i class="bi bi-asterisk text-light"></i>
-            </label>
-            </div>
-            <span class="text-light fw-600 btn-sm">En ligne</span>
-        </div>
-        <div class=" p-1 overflow-auto position-relativ h-100">
-            <div class="d-flex justify-content-start  px-1">
-                <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" left:0; border-radius: 12px;">
-                    Please
-                    fill out the
-                    form to
-                    start chat!</p>
-            </div>
-
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> lorem ipsum dolor</p>
-            </div>
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;">Message blabla bla
-                    chat!</p>
-            </div>
-            <div class="d-flex justify-content-end  px-1">
-                <p class="alert-dark shadow-sm w-75 my-2 p-2 " style=" border-radius: 12px;"> blablabla message
-                    chat!</p>
-            </div>
-            <div class="d-flex justify-content-start  px-1">
-                <p class="bg-success1 text-light position-absolut w-75 my-2 p-2 " style=" border-radius: 12px; left:0;">
-                    Please
-                    fill out the
-                    form to
-                    start chat!</p>
-            </div>
-
-        </div>
-        <form class="chat-form d-flex " style="bottom: 0;left: 0;">
-            <label for="filo" class="m-auto btn"> <i class="bi bi-paperclip"></i> </label>
-            <input id="filo" type="file" class="d-none" placeholder="">
-            <input type="text" class="form-control m-auto" placeholder="Ecrivez votre message ici">
-            <label for="submit" class="m-auto btn"> <i class="bi text-dark bi-send-plus"></i> </label>
-            <input id="submit" type="submit" class="d-none" placeholder="">
-
-
-        </form>
-    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -926,30 +873,33 @@
     <script src="assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
-    <script >
-        $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
     </script>
+
+    <script type="text/javascript">
+        window.$crisp = []; window.CRISP_WEBSITE_ID = "f6c7c6cd-12be-4d09-8956-4c940c455b2b"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 
 </body>
 

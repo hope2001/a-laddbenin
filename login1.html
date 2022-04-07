@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>ADDB Login</title>
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Font-->
-	<link rel="stylesheet" type="text/css" href="assets/css/sourcesanspro-font.css">
-	<!-- Main Style Css -->
-        <!-- Favicons -->
+    <meta charset="utf-8">
+    <title>ADDB Login</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="assets/css/sourcesanspro-font.css">
+    <!-- Main Style Css -->
+    <!-- Favicons -->
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/img/addb/Groupe 3 1.png">
-    
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-            rel="stylesheet">
-    
-        <!-- Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
 
     <style>
-
+        .active {
+            display: flex important;
+        }
     </style>
 </head>
+
 <body class="  p-0 m-0">
     <div class="container-fluid position-relative lg-overflow-hidden p-0" style="width: 100%; height: 100vh;">
         <div class="row p-0 m-0">
             <div class="col-lg-6 p-0 m-0 overflow-hidden " style="height: 100vh;">
                 <div class="row p-4 d-flex flex-column" style="background-color: #4C4E75;">
                     <a href="index.html"> <img src="assets/img/addb/Groupe 6 (1) 1.png" style="width: 80px;" alt=""
-                        srcset=""></a><h3 class="text-light my-3 text-center">
-                            Bienvenue dans la communauté ADDB
-                        </h3>
+                            srcset=""></a>
+                    <h3 class="text-light my-3 text-center">
+                        Bienvenue dans la communauté ADDB
+                    </h3>
 
                     <h4 class="text-light my-3 text-center">
-                        Avec plus de 3500 utlisateurs actifs dans tout le Bénin et au-delà, boostez votre visibilité. Vos offres atterissent directement auprès de vos clients potentiels.
+                        Avec plus de 3500 utlisateurs actifs dans tout le Bénin et au-delà, boostez votre visibilité.
+                        Vos offres atterissent directement auprès de vos clients potentiels.
                     </h4>
                 </div>
                 <div class="row p-0 d-flex flex-column  " style="background-color: #4C4E75;">
 
                     <img src="assets/img/addb/PC 4 1.png" style="width:100% " alt="" sizes="" srcset="">
                 </div>
-				<div class="row p-3 h-auto d-flex flex-column  " style="background-color: #A48CA2;">
-  				 </div>
+                <div class="row p-3 h-auto d-flex flex-column  " style="background-color: #A48CA2;">
+                </div>
 
             </div>
             <div class="col-lg-6 px-5 pt-5 d-flex flex-column">
@@ -58,34 +65,170 @@
 
                 <div class="row mt-5 d-flex px-4">
                     <div class=" m-auto p-auto col-10 d-flex flex-row justify-content-center">
-                        <a href="login1.html" class="d-flex w-50  p-3 border-2 border-bottom border-success1" style="">Email</a>
-                        <a href="login.html" class="d-flex w-50  p-3 border-2 border-bottom  " style="">Téléphone</a>
+                        <a onclick="emailform() " id="emailbtn"
+                            class="d-flex w-50  p-3 border-2 border-bottom border-success1 " style="">Email</a>
+                        <a onclick=" telephoneform() " id="telephonebtn"
+                            class="d-flex w-50 p-3 border-2 border-bottom text-dark" style="">Téléphone</a>
                     </div>
-                    <a href="" class="align-self-center col-lg-10 col-sm-12 col-md-10 my-3 btn text-center mx-auto border border-dar" style=""> 
-                        <img src="assets/img/addb/google.png" alt="google-icon" style="width: 20px; margin: 0 3px 0 3px;" srcset=""> Se connecter avec Google
-                    </a>
                 </div>
-                <span class="text-center my-3">Ou</span>
-                <div class="row">
-                    <form class="col-lg-10 col-sm-12 mx-auto d-flex flex-column justify-content-center ">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                           </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                <div id="tabcontent" class="row">
+                    <div id="email" class=" pt-3 col-12  ">
+
+
+                        <a href="" class="align-self-center col-lg-10 col-sm-12 col-md-10 my-3 d-flex justify-content-center btn text-center mx-auto border" style=""> 
+                            <img src="assets/img/addb/google.png" alt="google-icon" style="width: 25px; margin: 0 3px 0 3px;" srcset=""> Se connecter avec Google
+                        </a>
+                        <span class="text-center my-3 d-flex mx-auto justify-content-center">Ou</span>
+                        <div class="row">
+                            <form class="col-lg-10 col-sm-12 mx-auto d-flex flex-column justify-content-center ">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                   </div>
+                                   <div class="mb-3">
+                                                    <label for="password" class="form-label">Mot de passe</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border border-right bg-transparent p-2">
+                                                            <i class="bi bi-eye-slash-fill" id="togglePassword"
+                                                            style="cursor: pointer"></i>
+                                                        </span>
+                                                        <input type="password" class="form-control border border-left" id="password" >
+                                          
+                                                    </div>
+                                                </div>
+                                <a class="btn mx-auto text-center text-dark my-2">Mot de passe oublié ?</a>
+                                <button type="submit" class=" w-75  d-flex btn btn-success1 text-light m-auto"><span class="m-auto">Se connecter</span></button>
+                              </form>
+                              <div class="row d-flex my-1">
+                                  <h6 class="m-auto text-center">pas encore de compte? <a href="register.html" class="bt">Créer un compte</a></h6>
+                              </div>
                         </div>
-                        <a class="btn mx-auto text-center text-dark my-2">Mot de passe oublié ?</a>
-                        <button type="submit" class=" w-75  d-flex btn btn-success1 text-light m-auto"><span class="m-auto">Se connecter</span></button>
-                      </form>
-                      <div class="row d-flex my-1">
-                          <h6 class="m-auto text-center">pas encore de compte? <a href="register.html" class="bt">Créer un compte</a></h6>
-                      </div>
+                        </div>
+                    
+                        <div class="pt-3 col-12 d-none " id="telephone">
+                            <form class="col-9 mx-auto d-flex flex-column justify-content-center ">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Téléphone</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                   </div>
+                                   <div class="mb-3">
+                                    <label for="passwordcf" class="form-label"> Mot de passe</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text border-none bg-transparent p-2">
+                                            <i class="bi  bi-eye-slash-fill bi-ey " id="togglePasswordcf"
+                                            style="cursor: pointer"></i>
+                                        </span>
+                                        <input type="password" class="form-control" id="passwordcf" >
+                          
+                                    </div>
+                                </div>
+                                <a class="btn mx-auto text-center text-dark my-2">Mot de passe oublié ?</a>
+                                <button type="submit" class=" w-75  d-flex btn btn-success1 text-light m-auto"><span class="m-auto">Se connecter</span></button>
+                              </form>
+                              <div class="row d-flex my-1">
+                                  <h6 class="m-auto text-center">pas encore de compte? <a href="register.html" class="bt">Créer un compte</a></h6>
+                              </div>
+                        </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+    <script>
+        let telephone = document.getElementById('telephone');
+        let email = document.getElementById('email');
+        let tabcontent = document.getElementById('tabcontent');
+        let emailbtn = document.getElementById('emailbtn');
+        let telephonebtn = document.getElementById('telephonebtn');
+
+        /********************/
+        function emailform() {
+            emailbtn.className = '';
+            emailbtn.className = 'd-flex w-50  p-3 border-2 border-bottom border-success1';
+            telephonebtn.className = '';
+            telephonebtn.className = 'd-flex w-50 p-3 border-2 border-bottom text-dark';
+            /*tabcontent.innerHTML = '';
+            tabcontent.innerHTML = email.innerHTML;*/
+            telephone.className = 'd-none';
+            email.className = 'pt-3 col-12'
+        }
+
+        function telephoneform() {
+            emailbtn.className = '';
+            emailbtn.className = 'd-flex w-50 p-3 border-2 border-bottom text-dark';
+            telephonebtn.className = '';
+            telephonebtn.className = 'd-flex w-50  p-3 border-2 border-bottom border-success1';
+
+            /*tabcontent.innerHTML = '';
+            tabcontent.innerHTML = telephone.innerHTML;*/
+            email.className = 'd-none';
+            telephone.className = 'pt-3 col-12'
+        }
+
+        /*********************/
+
+       /* tabcontent.innerHTML = email.innerHTML
+
+        function emailform() {
+            emailbtn.className = '';
+            emailbtn.className = 'd-flex w-50  p-3 border-2 border-bottom border-success1';
+            telephonebtn.className = '';
+            telephonebtn.className = 'd-flex w-50 p-3 border-2 border-bottom text-dark';
+            tabcontent.innerHTML = '';
+            tabcontent.innerHTML = email.innerHTML;
+        }
+
+        function telephoneform() {
+            emailbtn.className = '';
+            emailbtn.className = 'd-flex w-50 p-3 border-2 border-bottom text-dark';
+            telephonebtn.className = '';
+            telephonebtn.className = 'd-flex w-50  p-3 border-2 border-bottom border-success1';
+
+            tabcontent.innerHTML = '';
+            tabcontent.innerHTML = telephone.innerHTML;
+        }*/
+    </script>
+
+
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    const togglePassword1 = document.querySelector("#togglePasswordcf");
+    const password1 = document.querySelector("#passwordcf");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+    });
+
+
+    togglePassword1.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password1.getAttribute("type") === "password" ? "text" : "password";
+        password1.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script type="text/javascript">
+    window.$crisp = []; window.CRISP_WEBSITE_ID = "f6c7c6cd-12be-4d09-8956-4c940c455b2b"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+
+
+</body>
+
 </html>
