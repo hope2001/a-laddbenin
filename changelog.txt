@@ -1,3 +1,6 @@
+Version: 4.7.1
+  - Fixed padding and slign issue in about and services sections
+
 Version: 4.7.0
   - Updated Bootstrap to version 5.1.3
   - Updated all outdated third party vendor libraries to their latest versions
@@ -51,9 +54,9 @@ Version: 2.2.0
 Version: 2.1.0
   - Updated Bootstrap to version 4.5.0
   - Updated the PHP Email Form library to version 2.0 with reCaptcha support
+  - Added portfolio-details.html template
   - Aded inner-page.html tempalte
-  - Added smooth scroll on page load with hash links in the url
-  - Updated all outdated third party vendor libraries to their latest versions
+  - Updated all the third party vendor libraries to their latest versions
   - Other small fixes and improvements
   
 Version: 2.0.0
@@ -62,4 +65,4 @@ Version: 2.0.0
   - Added NodeJS NPM Development version (Pro unlimited & Membership members)
   
 Version: 1.0.0
-  - Initial Release
+- Initial Release
